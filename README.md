@@ -1,6 +1,6 @@
-# Codebase on pre-trained models on Multi-Moments and M4dataset
+# Codebase on pre-trained models on Multi-moments and M4 dataset
 
-## A quick command of evaluating the M4dataset pre-trained model
+## A quick command of evaluating the M4-dataset pre-trained model
 
 ```
 python inference.py m4dataset RGB --arch resnet50 --num_segments 8 --batch-size 36 -j 32 --consensus_type=avg --shift --shift_div=8 --shift_place=blockres --npb --metadir ./m4dataset/ --loss_type lsep --resume /Path/To/The/Pretrained/Weights
