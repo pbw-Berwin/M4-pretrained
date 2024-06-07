@@ -34,4 +34,4 @@ aws s3 cp --no-sign-request --recursive \
 ## Citation
 If you use this model, please consider citing the BOLD Moments paper:
 
-CITATION TODO
+Lahner et al. Modeling short visual events through the BOLD Moments video fMRI dataset and metadata. Nature Communications, (2024).
