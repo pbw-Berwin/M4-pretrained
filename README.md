@@ -9,7 +9,7 @@ Here is a relevant exercpt from BOLD Moments manuscript describing the model tra
 
 ## Updates
 
-[April 16th, 2025] The TSM ResNet50 model weights used for the BOLD Moments Dataset manuscript were trained using the default **bidirectional** shift, as reflected in the code here. This is in contrast to the manuscript incorrectly describing the model being trained to process video frames in a '**unidirectional** temporal order.' Note the manuscript's relevant analyses do not depend on this dinstiction, but nevertheless this difference might be meaningful in future experiments.
+[April 16th, 2025] The TSM ResNet50 model weights used for the BOLD Moments Dataset manuscript were trained using the default **bidirectional** shift, as reflected in the code here. This is in contrast to the manuscript incorrectly describing the model being trained to process video frames in a '**unidirectional** temporal order.' Note the manuscript's relevant analyses do not depend on this distinction, but nevertheless this difference might be meaningful in future experiments.
 
 ## A quick command of evaluating the M4-dataset pre-trained model
 
