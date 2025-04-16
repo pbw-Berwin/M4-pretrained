@@ -7,6 +7,10 @@ Model weights and extracted features for BMD's 1,102 video stimulus set are avai
 Here is a relevant exercpt from BOLD Moments manuscript describing the model training:
 >The model adopts the architecture of a Temporal Shift Module (TSM) (Lin et al., 2019), with ResNet50 as the backbone network. We trained our model on the M4 (Multi-Moments minus Memento) training dataset for 120 epochs by using LSEP (log-sum-exp pairwise) loss (Monfort et al., 2022). LSEP loss was first proposed in (Li et al., 2017) and modified in (Monfort et al., 2022) as an appropriate loss function to train on multi-label and class imbalanced datasets, such as actions. The M4 training dataset consists of 1,012,169 videos which are in the Multi-Moments in Time dataset but not in the Memento dataset to ensure no overlap with the 1,102 BMD stimuli. Our model was initialized with the weights of the ResNet50 trained on ImageNet-1k dataset. We chose the model hyperparameters to closely follow those used in Lin and colleagues (2019). Specifically, during the training phase, our model split the input video into 8 segments and sampled 1 frame from each segment. We used SGD optimizer to optimize our model. The learning rate followed the cosine learning rate schedule and was initialized as 0.02. The weight decay was set to be 0.0001 and the batch size 128. The model achieved a precision-at-one score 0.593, a precision-at-five score of 0.829, and a mAP score of 0.636 (loss of 2.75054). Model training took 3 months on 16 V100 GPUs.
 
+## Updates
+
+[April 16th, 2025] The TSM ResNet50 model weights used for the BOLD Moments Dataset manuscript were trained using the default **bidirectional** shift, as reflected in the code here. This is in contrast to the manuscript incorrectly describing the model being trained to process video frames in a '**unidirectional** temporal order.' Note the manuscript's relevant analyses do not depend on this dinstiction, but nevertheless this difference might be meaningful in future experiments.
+
 ## A quick command of evaluating the M4-dataset pre-trained model
 
 ```
